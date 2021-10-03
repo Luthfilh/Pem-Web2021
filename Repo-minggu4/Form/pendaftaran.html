@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Form Pendaftaran_12492</title>
+
+ <style type="text/css">
+
+body {
+  background-image: url('bc2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:  100% 100%;
+}
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+   }
+
+ * {
+
+  box-sizing: border-box;
+
+}
+
+form
+
+{
+
+  padding: 1em;
+
+  background: #f9f9f9;
+
+  border: 1px solid #c1c1c1;
+
+  margin-top: 2rem;
+
+  max-width: 600px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 1em;
+
+}
+
+form input {
+
+  margin-bottom: 1rem;
+
+  background: #fff;
+
+  border: 1px solid #9c9c9c;
+
+}
+
+form button {
+
+  background: lightgrey;
+
+  align: center;
+
+  padding: 0.7em;
+
+  border: 0;
+
+}
+
+
+
+form button:hover {
+
+  background: green;
+
+  color: white;
+
+}
+
+form span a{
+
+  background: lightblue;
+
+  padding: 0.7em;
+
+  border: 0;
+
+  text-decoration: none;
+
+  color: black;
+
+  text-align: center;
+
+}
+
+
+
+form span a:hover {
+
+  background: blue;
+
+  color: white;
+
+}
+
+
+
+label {
+
+  text-align: left;
+
+  display: block;
+
+  padding: 0.5em 1.5em 0.5em 0;
+
+}
+
+ 
+
+input {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+input:focus {
+
+  outline: 3px solid green;
+
+}
+
+select {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+select:focus {
+
+  outline: 3px solid green;
+
+}
+
+@media (min-width: 400px) {
+
+  form {
+
+    overflow: hidden;
+
+  }
+
+  label {
+
+    float: left;
+
+    width: 200px;
+
+  }
+
+  input {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+
+
+    select {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+  button {
+
+    float: right;
+
+    width: calc(100% - 200px);
+
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+ <form action="berhasil.php" method="GET">
+
+  <h1 align="center">Formulir Pendaftaran </h1>
+        <p align="center">INFO PENDAFTARAN</p>
+    
+        <label>NISN</label>
+        <input name="nisn" type="text">
+    
+        <label>Asal Sekolah</label>
+        <input name="asal_sekolah" type="text">
+
+        <label>Tahun Lulus</label>
+        <input name="tahun_lulus" type="text">
+
+        <label>Ijazah</label>
+        <input name="upload" type="file">
+        <hr align="center" color="#00a7ff" size="6" width="100%">
+
+
+
+        <p align="center">DATA CALON PESERTA</p>
+        <label>Nama Lengkap</label>
+        <input name="nama_lengkap" type="text">
+
+        <label>NIK</label>
+        <input name="nik" type="text">
+
+        <label>Tempat Lahir</label>
+        <input name="tempat_lahir" type="text">
+
+        <label>Tanggal Lahir</label>
+        <input name="tanggal_lahir" type="date">
+
+        <label>Jenis Kelamin</label>
+        <select name="jenis_kelamin">
+         <option value="Laki-Laki">Laki-Laki</option>
+         <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label>Alamat Lengkap</label>
+        <input name="alamat" type="text">
+
+        <label>E-mail Aktif</label>
+        <input name="email" type="text">
+        <hr align="center" color="#00a7ff" size="6" width="100%">
+
+
+        <p align="center">DATA ORANG TUA</p>
+        <label>Nomor Kartu Keluarga</label>
+        <input name="nomor_kk" type="text">
+
+        <label>Nama Ayah Kandung</label>
+        <input name="nama_ayah" type="text">
+
+        <label>Agama</label>
+        <select name="agama_ayah">
+         <option value="Islam">Islam</option>
+         <option value="Katolik"">Katolik</option>
+         <option value="Hindu">Hindu</option>
+         <option value="Budha">Budha</option>
+         <option value="Khonghucu">Khonghucu</option>
+         <option value="Lain-lain">Lain-lain</option>
+        </select>
+
+        <label>Pekerjaan</label>
+        <input name="pekerjaan_ayah" type="text">
+
+        <label>Nama Ibu Kandung</label>
+        <input name="ibu_kandung" type="text">
+
+        <label>Agama</label>
+        <select name="agama_ibu">
+         <option value="Islam">Islam</option>
+         <option value="Katolik"">Katolik</option>
+         <option value="Hindu">Hindu</option>
+         <option value="Budha">Budha</option>
+         <option value="Khonghucu">Khonghucu</option>
+         <option value="Lain-lain">Lain-lain</option>
+        </select>
+
+        <label>Pekerjaan</label>
+        <input name="pekerjaan_ibu" type="text">
+
+        <label>Alamat Orang Tua</label>
+        <input name="alamat_ortu" type="text">
+        <hr align="center" color="#00a7ff" size="6" width="100%">
+
+
+        <button>Daftar</button>
+
+ </form>
+
+</body>
+
+
+</html>
